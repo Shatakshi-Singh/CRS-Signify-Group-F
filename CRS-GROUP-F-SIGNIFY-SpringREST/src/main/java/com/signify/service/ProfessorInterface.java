@@ -3,6 +3,10 @@
  */
 package com.signify.service;
 
+import java.util.List;
+
+import com.signify.bean.Course;
+import com.signify.bean.Student;
 import com.signify.exception.InvalidEntryException;
 
 /**
@@ -16,18 +20,20 @@ public interface ProfessorInterface {
 	 * @param grade
 	 * @param courseCode
 	 * to change grades of the student
+	 * @return 
 	 */
-	public void changeGrade(String studentId, String grade, String courseCode);
+	public boolean changeGrade(String studentId, String grade, String courseCode);
 	/**
 	 * 
 	 * @param code
 	 * to view all the enrolled students
+	 * @return 
 	 */
-	public void viewEnrolledStudents(String code);
+	public List<Student> viewEnrolledStudents(String code);
 	/**
 	 * Selecting course by the professor
 	 */
-	public void selectCourse() ;
+	public List<Course> selectCourse(String userId) ;
 	/**
 	 * 
 	 * @param userId

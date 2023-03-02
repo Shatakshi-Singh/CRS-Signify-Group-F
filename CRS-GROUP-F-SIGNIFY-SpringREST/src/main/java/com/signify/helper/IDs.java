@@ -14,10 +14,10 @@ public class IDs {
 		
 		**/
 	 public static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
-	   public static final String DB_URL = "jdbc:mysql://localhost/crs-databse";
+	   public static final String DB_URL = "jdbc:mysql://localhost/databasecrs";
 		
 	  //  Database credentials
 	   public static final String USER = "root";
-	   public static final String PASS = "root";
+	   public static final String PASS = "123456";
 	   
 }

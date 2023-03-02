@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="CRS-GROUP-F-SIGNIFY-POS/src"/>
+	<classpathentry kind="src" path="CRS-GROUP-F-SIGNIFY-SpringREST/src/main/java"/>
+	<classpathentry kind="src" path="CRS-GROUP-F-SIGNIFY-SpringREST/src/test/java"/>
+	<classpathentry kind="lib" path="CRS-GROUP-F-SIGNIFY-SpringREST/.mvn/wrapper/maven-wrapper.jar"/>
+	<classpathentry kind="output" path="CRS-GROUP-F-SIGNIFY-POS/bin"/>
+</classpath>
