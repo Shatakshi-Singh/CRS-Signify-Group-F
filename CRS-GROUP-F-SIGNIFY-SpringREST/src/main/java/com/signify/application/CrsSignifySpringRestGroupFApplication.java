@@ -7,8 +7,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
-@Configuration
-@EnableAutoConfiguration
+@Configuration //Configure the module configuration in the Spring project 
+@EnableAutoConfiguration  //
 @ComponentScan("com.signify.*")
 @EnableWebMvc
 

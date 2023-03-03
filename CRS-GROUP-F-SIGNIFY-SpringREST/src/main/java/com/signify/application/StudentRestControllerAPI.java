@@ -40,11 +40,16 @@ public class StudentRestControllerAPI {
 	
 	
 	@RequestMapping(
-			value = "/createStudent",
+			value = "/createStudent",  //map the "/createStudent" URL path to the addStudent() method
 			method = RequestMethod.POST
 			)
 	@ResponseBody
 	public ResponseEntity<String> addStudent(Map<String, String> param) {
+		
+		/*
+		 get the values of batch, branchName, password, phoneNumber, semester, studentName, address, student parameters
+		  using the get method of the Map interface and set them to the corresponding fields of a 'student'.
+		 */
 		student.setBatch(param.get("batch"));
 		student.setBranchName(param.get("branchName"));
 		student.setPassword(param.get("password"));
@@ -52,13 +57,14 @@ public class StudentRestControllerAPI {
 		student.setSemester(param.get("semester"));
 		student.setStudentName(param.get("studentName"));
 		student.setAddress(param.get("address"));
-		studentService.addStudent(student);
+		studentService.addStudent(student); 
 
-		return new ResponseEntity<String>("added", HttpStatus.OK);
+		return new ResponseEntity<String>("added", HttpStatus.OK); 
 	}
 	
+	
 	@RequestMapping(
-			produces = MediaType.APPLICATION_JSON, 
+			produces = MediaType.APPLICATION_JSON,  
 		    method = RequestMethod.GET,
 		    value ="/viewGrades/{id}")
 	public ResponseEntity<List<Course>> viewGrades(@PathVariable String id) {
@@ -127,6 +133,11 @@ public class StudentRestControllerAPI {
 	}
 	
 	
+	/**
+	 * @param id 
+	 * @param courseCode
+	 * @return
+	 */
 	@RequestMapping(
 
 			produces = MediaType.APPLICATION_JSON, 

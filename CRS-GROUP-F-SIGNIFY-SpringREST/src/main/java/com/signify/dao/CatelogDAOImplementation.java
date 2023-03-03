@@ -29,7 +29,7 @@ public class CatelogDAOImplementation implements CatelogDAOInterface {
 	PreparedStatement stmt=null;
 	
 	@Override
-	public void add(String profid, String courseCode) throws CourseNotFoundException{
+	public void add(String profid, String courseCode) throws CourseNotFoundException{ 
 		// TODO Auto-generated method stub
 		try
 		{
@@ -65,7 +65,7 @@ public class CatelogDAOImplementation implements CatelogDAOInterface {
 
 	           int row =stmt.executeUpdate();
 	           if(row == 0)
-	        	   throw new CourseNotFoundException(courseCode);
+	        	   throw new CourseNotFoundException(courseCode); 
 		     
 		      stmt.close();
 		      //

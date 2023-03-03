@@ -9,10 +9,6 @@ import com.signify.bean.Course;
 import com.signify.bean.Student;
 import com.signify.exception.InvalidEntryException;
 
-/**
- * @author GROUP H
- *
- */
 public interface ProfessorInterface {
 	/**
 	 * 

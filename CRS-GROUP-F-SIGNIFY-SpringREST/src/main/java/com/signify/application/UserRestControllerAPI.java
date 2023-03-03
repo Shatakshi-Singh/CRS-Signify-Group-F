@@ -64,7 +64,7 @@ public class UserRestControllerAPI {
 		String oldPassword = param.get("oldPassword");
 		String newPassword = param.get("newPassword");
 		if (userServices.updatePassword(id, oldPassword, newPassword)) {
-			return new ResponseEntity<String>("Password Uodated",HttpStatus.OK);
+			return new ResponseEntity<String>("Password Updated",HttpStatus.OK);
 			
 		}
 		return new ResponseEntity<String>("No Customer found for ID " + id, HttpStatus.NOT_FOUND);

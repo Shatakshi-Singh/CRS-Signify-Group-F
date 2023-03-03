@@ -77,7 +77,7 @@ public class AdminRestControllerAPI {
 			method = RequestMethod.POST
 			)
 	@ResponseBody
-	public ResponseEntity<String> addCourse(@RequestBody Map<String, String> param) {
+	public ResponseEntity<String> addCourse(@RequestBody Map<String, String> param) { 
 		course.setCourseCode(param.get("courseCode"));
 		course.setCourseName(param.get("courseName"));
 		course.setDepartmentName(param.get("departmentName"));
