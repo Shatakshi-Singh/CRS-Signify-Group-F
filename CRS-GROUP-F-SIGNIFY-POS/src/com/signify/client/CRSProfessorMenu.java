@@ -33,9 +33,6 @@ public class CRSProfessorMenu {
 	
 	 CourseRegistrationDAOInterface coursesDataset = new CourseRegistrationDAOImplementation();
 	 
-	/**
-	 * @param userId
-	 */
 	public void display(String userId) {
 	
         System.out.println("\tWELCOME TO PROFESSOR PANEL");  
@@ -53,11 +50,10 @@ public class CRSProfessorMenu {
         boolean exit = true;
     	   while(exit) {
     	        System.out.println("------------------------------------------------------");  
-    	        System.out.println("Press\n"
-    	        		+ "1. ADD GRADES\r\n"
-    	        		+ "2. VIEW ENROLLED STUDENTS\r\n"
-    	        		+ "3. EDIT USER DETAILS\r\n"
-    	        		+ "4. EXIT PORTAL");
+    	        System.out.println("PRESS 1 ADD GRADES\r\n"
+    	        		+ "PRESS 2 VIEW ENROLLED STUDENTS\r\n"
+    	        		+ "PRESS 3 EDIT USER DETAILS\r\n"
+    	        		+ "PRESS 4 EXIT PORTAL");
     	       try {
     	    	   String choice = in.next();
        	        switch(choice) {
@@ -152,12 +148,11 @@ public class CRSProfessorMenu {
        	        case "3":
        	              while(true) {
        	              System.out.println("------------------------------------------------------");
-       	         	System.out.println("Press\n"
-       	             		+ "1. EDIT NAME\r\n"
-       	             		+ "2. EDIT DESIGNATION\r\n"
-       	             		+ "3. EDIT DEPARTMRNT NAME\r\n"
-       	             		+ "4. EDIT PHONE NUMBER\r\n"
-       	             		+ "5. EXIT PORTAL");
+       	         	System.out.println("PRESS 1 EDIT NAME\r\n"
+       	             		+ "PRESS 2 EDIT DESIGNATION\r\n"
+       	             		+ "PRESS 3 EDIT DEPARTMRNT NAME\r\n"
+       	             		+ "PRESS 4 EDIT PHONE NUMBER\r\n"
+       	             		+ "PRESS 5 EXIT PORTAL");
        	         	String field = in.next();
        	         	if(field.equals("5")) 
        	             	professorService.editDetails(userId, field, "");

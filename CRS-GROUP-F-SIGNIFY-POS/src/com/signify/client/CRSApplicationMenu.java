@@ -28,16 +28,10 @@ import com.signify.service.UserLoginInterface;
 import com.signify.service.UserLoginServices;
 
 
-/**
- * @author CRS_GROUP_E_SIGNIFY
- *
- */
+
 public class CRSApplicationMenu {
 
-	/**
-	 * @param args
-	 * @throws IOException 
-	 */
+	
 	public static void main(String[] args){
 		// TODO Auto-generated method stub
 		
@@ -66,12 +60,11 @@ public class CRSApplicationMenu {
     	   while(exit) {
     	        System.out.println("------------------------------------------------------");  
     	        System.out.println("\t \t MAIN MENU\n"
-    	        		+ "Press\n"
-    	        		+ "1. USER LOGIN\r\n"
-    	        		+ "2. VIEW COURSE CATALOG\r\n"
-    	        		+ "3. STUDENT REGISTRATION\r\n"
-    	        		+ "4. UPDATE PASSWORD\r\n"
-    	        		+ "5. EXIT PORTAL");
+    	        		+ "PRESS 1 USER LOGIN\r\n"
+    	        		+ "PRESS 2 VIEW COURSE CATALOG\r\n"
+    	        		+ "PRESS 3 STUDENT REGISTRATION\r\n"
+    	        		+ "PRESS 4 UPDATE PASSWORD\r\n"
+    	        		+ "PRESS 5 EXIT PORTAL");
     	       try {
 
        	        String choice = in.next();

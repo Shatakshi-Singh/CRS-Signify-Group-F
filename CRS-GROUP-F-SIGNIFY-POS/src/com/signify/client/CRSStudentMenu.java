@@ -34,10 +34,7 @@ import com.signify.service.StudentServices;
 import com.signify.validator.PaymentValidator;
 
 
-/**
- * @author CRS_GROUP_E_SIGNIFY
- *
- */
+
 public class CRSStudentMenu {
 
 	CourseDAOInterface courseDataset = new CourseDAOImplementation();
@@ -62,14 +59,13 @@ public class CRSStudentMenu {
      
     	   while(exit) {
     	        System.out.println("------------------------------------------------------");  
-    	        System.out.println("Press\n"
-    	        		+ "1. ADD COURSE\r\n"
-    	        		+ "2. DROP COURSE\r\n"
-    	        		+ "3. VIEW COURSE CATALOG\r\n"
-    	        		+ "4. VIEW GRADES\r\n"
-    	        		+ "5. MAKE FEE PAYMENT\r\n"
-    	        		+ "6. EDIT USER DETAILS\r\n"
-    	        		+ "7. EXIT PORTAL");
+    	        System.out.println("PRESS 1 ADD COURSE\r\n"
+    	        		+ "PRESS 2 DROP COURSE\r\n"
+    	        		+ "PRESS 3 VIEW COURSE CATALOG\r\n"
+    	        		+ "PRESS 4 VIEW GRADES\r\n"
+    	        		+ "PRESS 5 MAKE FEE PAYMENT\r\n"
+    	        		+ "PRESS 6 EDIT USER DETAILS\r\n"
+    	        		+ "PRESS 7 EXIT PORTAL");
     	       try {
     	    	   String choice = in.next();
        	        switch(choice) {
@@ -203,13 +199,12 @@ public class CRSStudentMenu {
        	        case "6":
        	             while(true) {
        	             System.out.println("------------------------------------------------------");
-       	        	System.out.println("Press\n"
-       	            		+ "1. EDIT NAME\r\n"
-       	            		+ "2. EDIT ADDRESS\r\n"
-       	            		+ "3. EDIT BRANCH NAME\r\n"
-       	            		+ "4. EDIT BATCH\r\n"
-       	            		+ "5. EDIT PHONE NUMBER\r\n"
-       	            		+ "6. EXIT PORTAL");
+       	        	System.out.println("PRESS 1 EDIT NAME\r\n"
+       	            		+ "PRESS 2 EDIT ADDRESS\r\n"
+       	            		+ "PRESS 3 EDIT BRANCH NAME\r\n"
+       	            		+ "PRESS 4 EDIT BATCH\r\n"
+       	            		+ "PRESS 5 EDIT PHONE NUMBER\r\n"
+       	            		+ "PRESS 6 EXIT PORTAL");
        	        	String field = in.next();
        	        	if(field.equals("6")) 
        	            	studentServices.editDetails(userId, field, "");

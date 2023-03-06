@@ -53,12 +53,11 @@ public class CRSAdminMenu {
     	 */
         while(exit) {
         System.out.println("------------------------------------------------------");  
-        System.out.println("Press\n"
-        		+ "1. STUDENT FUNCTIONS\r\n"
-        		+ "2. PROFESSOR FUNCTIONS\r\n"
-        		+ "3. COURSE FUNCTIONS\r\n"
-        		+ "4. ADMIN ACCESS\r\n"
-        		+ "5. EXIT PORTAL");
+        System.out.println("PRESS 1 STUDENT FUNCTIONS\r\n"
+        		+ "PRESS 2 PROFESSOR FUNCTIONS\r\n"
+        		+ "PRESS 3 COURSE FUNCTIONS\r\n"
+        		+ "PRESS 4 ADMIN ACCESS\r\n"
+        		+ "PRESS 5 EXIT PORTAL");
         try {
         	String choice = in.next();
             switch(choice) {
@@ -66,10 +65,9 @@ public class CRSAdminMenu {
             	 boolean exit1 = true;
             	    while(exit1) {
             	    System.out.println("------------------------------------------------------");  
-            	    System.out.println("Press\n"
-            	    		+ "1. APPROVE STUDENT REGISTRATION\r\n"
-            	    		+ "2. VIEW ENROLLED STUDENTS\r\n"
-            	    		+ "3. EXIT PORTAL");
+            	    System.out.println("PRESS 1 APPROVE STUDENT REGISTRATION\r\n"
+            	    		+ "PRESS 2 VIEW ENROLLED STUDENTS\r\n"
+            	    		+ "PRESS 3 EXIT PORTAL");
             	    try {
             	    	String choice1 = in.next();
                 	    switch(choice1) {
@@ -123,12 +121,11 @@ public class CRSAdminMenu {
             	 boolean exit2 = true;
          	    while(exit2) {
          	    System.out.println("------------------------------------------------------");  
-         	    System.out.println("Press\n"
-         	    		+ "1. ADD NEW PROFESSOR\r\n"
-         	    		+ "2. ASSIGN COURSE TO PROFESSOR\r\n"
-         	    		+ "3. VIEW PROFESSORS\r\n"
-         	    		+ "4. REMOVE PROFESSOR\r\n" 	    		
-         	    		+ "5. EXIT PORTAL");
+         	    System.out.println("PRESS 1 ADD NEW PROFESSOR\r\n"
+         	    		+ "PRESS 2 ASSIGN COURSE TO PROFESSOR\r\n"
+         	    		+ "PRESS 3 VIEW PROFESSORS\r\n"
+         	    		+ "PRESS 4 REMOVE PROFESSOR\r\n" 	    		
+         	    		+ "PRESS 5 EXIT PORTAL");
          	   try {
          		  String choice2 = in.next();
           	    switch(choice2) {
@@ -180,12 +177,11 @@ public class CRSAdminMenu {
             	 boolean exit3 = true;
           	    while(exit3) {
           	    System.out.println("------------------------------------------------------");  
-          	    System.out.println("Press\n"
-          	    		+ "1. ADD NEW COURSE\r\n"
-          	    		+ "2. REMOVE COURSE\r\n"
-          	    		+ "3. GENERATE REPORT CARD\r\n"
-          	    		+ "4. VIEW COURSE CATALOG\r\n"
-          	    		+ "5. EXIT PORTAL");
+          	    System.out.println("PRESS 1 ADD NEW COURSE\r\n"
+          	    		+ "PRESS 2 REMOVE COURSE\r\n"
+          	    		+ "PRESS 3 GENERATE REPORT CARD\r\n"
+          	    		+ "PRESS 4 VIEW COURSE CATALOG\r\n"
+          	    		+ "PRESS 5 EXIT PORTAL");
           	   try {
           		 String choice3 = in.next();
            	    switch(choice3) {
@@ -232,11 +228,10 @@ public class CRSAdminMenu {
             	boolean exit4 = true;
           	    while(exit4) {
           	    System.out.println("------------------------------------------------------");  
-          	    System.out.println("Press\n"
-          	    		+ "1. ADD ADMIN\r\n"
-          	    		+ "2. REMOVE ADMIN\r\n"
-          	    		+ "3. UPDATE ADMIN DETAILS\r\n"
-          	    		+ "4. EXIT PORTAL");
+          	    System.out.println("PRESS 1 ADD ADMIN\r\n"
+          	    		+ "PRESS 2 REMOVE ADMIN\r\n"
+          	    		+ "PRESS 3 UPDATE ADMIN DETAILS\r\n"
+          	    		+ "PRESS 4 EXIT PORTAL");
           	    try {
           	    	
           	    	String choice4 = in.next();
